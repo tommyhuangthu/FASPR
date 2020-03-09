@@ -25,7 +25,7 @@ string ROTLIB2010=(string)"dun2010bbdep.bin";
 int main(int argc,char** argv)
 {
   cout<<"###########################################################################"<<endl;
-  cout<<"                    FASPR (Version 20200110)                 "<<endl;
+  cout<<"                    FASPR (Version 20200309)                 "<<endl;
   cout<<"  A method for fast and accurate protein side-chain packing, "<<endl;
   cout<<"which is an important problem in protein structure prediction"<<endl;
   cout<<"and protein design."<<endl;
