@@ -30,7 +30,7 @@ the name of 'dun2010bbdep.bin' because it is hard coded in the source code.
 
 2. How to build the program for speed?
 Build the executable program from the source code using the following command:
-g++ -ffast-math -O3 -o FASPR src/*.cpp
+g++ --ffast-math -O3 -o FASPR src/*.cpp
 or (if the above command does not work):
 g++ -O3 -o FASPR src/*.cpp
 
