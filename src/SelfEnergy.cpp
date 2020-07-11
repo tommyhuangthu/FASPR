@@ -172,12 +172,12 @@ float SelfEnergy::VDWType(int a,int b,float rij,float dist)
 float SelfEnergy::VDWEnergyAtomAndAtom(float dstar,float eij)
 {
   if(dstar>DSTAR_MAX_CUT) return 0.;
-  else if(dstar>0.8908987){
-    double energy = eij*(pow(1/dstar,12)-2*pow(1/dstar,6));
+  else if(dstar>1){
+    double energy = 4*eij*(pow(1/dstar,12)-pow(1/dstar,6));
     return energy;
   }
   else if(dstar>DSTAR_MIN_CUT){
-    return VDW_REP_CUT*(dstar-0.8908987)/(DSTAR_MIN_CUT-0.8908987);
+    return VDW_REP_CUT*(dstar-1)/(DSTAR_MIN_CUT-1);
   }
   else{
     return VDW_REP_CUT;
