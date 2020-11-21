@@ -1,4 +1,7 @@
-FASPR is a method for fast and accurate protein side-chain packing.
+##############################################################################
+
+FASPR is a method for fast and accurate protein side-chain packing, which is 
+an important step in protein structure prediction and protein design.
 
 Copyright (c) Xiaoqiang Huang
 Yang Zhang Lab
@@ -22,6 +25,17 @@ Usage: ./FASPR -i input.pdb -o output.pdb [-s sequence.txt]
     ACDEFGHIKLMNPQRSTVWYYWVTSRQPNMLKIHGFEDCA
     for the input sequence, only 20 canonical amino acids are allowed.
 
+    When the input sequence is the same as the one extracted from the PDB 
+    structure, the amino acid side-chain conformations is repacked. When the 
+    input sequence is different from that extracted from PDB, mutations will 
+    be introduced. Therefore, FASPR can be used to construct mutant models 
+    very efficiently.
+
+    If you want to fix the conformation of some residues during packing, you
+    can specify those residue in low-case letters and the others in upper-case 
+    letters, e.g.:
+    acdefghiklmnpqrstvwyYWVTSRQPNMLKIHGFEDCA
+
 #### NOTE ####
 Please remember to put the executable FASPR program and the binary Dunbrack 
 rotamer library 'dun2010bbdep.bin' in the same directory. Otherwise, the program 
@@ -43,6 +57,6 @@ FASPR can be run in any OS if it is buit following the way as mentioned above.
 
 ##############################################################################
                                 REFERENCE
-Please cite:
+If FASPR is useful to your work, please cite:
 Xiaoqiang Huang, Robin Pearce, Yang Zhang, FASPR: an open-source tool for fast 
-and accurate protein side-chain packing.Bioinformatics (2020) 36: 3758-3765.
+and accurate protein side-chain packing. Bioinformatics (2020) 36: 3758-3765.
