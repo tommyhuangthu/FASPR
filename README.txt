@@ -58,5 +58,9 @@ FASPR can be run in any OS if it is buit following the way as mentioned above.
 ##############################################################################
                                 REFERENCE
 If FASPR is useful to your work, please cite:
-Xiaoqiang Huang, Robin Pearce, Yang Zhang, FASPR: an open-source tool for fast 
+
+[1] Xiaoqiang Huang, Robin Pearce, Yang Zhang, FASPR: an open-source tool for fast 
 and accurate protein side-chain packing. Bioinformatics (2020) 36: 3758-3765.
+[2] Xiaoqiang Huang, Robin Pearce, Yang Zhang. Toward the Accuracy and Speed of 
+Protein Side-Chain Packing: A Systematic Study on Rotamer Libraries. 
+J. Chem. Inf. Model. 2020; 60:410-420.
