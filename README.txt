@@ -4,11 +4,8 @@ FASPR is a method for fast and accurate protein side-chain packing, which is
 an important step in protein structure prediction and protein design.
 
 Copyright (c) Xiaoqiang Huang
-Yang Zhang Lab
-Dept. of Computational Medicine and Bioinformatics
-Medical School
 University of Michigan
-Email: tommyhuangthu@foxmail.com, xiaoqiah@umich.edu
+Email: xiaoqiah@outlook.com or xiaoqiah@umich.edu
 
 ##############################################################################
                                   FAQ
