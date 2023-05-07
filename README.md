@@ -15,7 +15,7 @@ FASPR is a fast and accurate program for protein side-chain packing, which is an
 Please remember to put the executable FASPR program and the binary Dunbrack rotamer library 'dun2010bbdep.bin' in the same directory. Otherwise, the program will report "error! cannot find rotamer library dun2010bbdep.bin". Also, do not change the name of 'dun2010bbdep.bin' because it is hard-coded in the source code.
 
 # INSTALLATION
-We recommend users to download the FASPR source-code package to your computer and build the FASPR executable on your own. After downloading and unzipping the package, change into the $path/FASPR/ directory and run "<b>g++ -O3 --fast-math -o FASPR src/*.cpp</b>" or "<b>g++ -O3 -o FASPR src/*.cpp</b>" if you are working on UNIX, Linux or Mac. If you are working on the Windows system, you need to install the g++ compiler first.
+We recommend users to download the FASPR source-code package to your computer and build the FASPR executable on your own. After downloading and unzipping the package, change into the $path/FASPR/ directory and run "<b>g++ -O3 --fast-math -o FASPR src/*.cpp</b>" if you are working on UNIX or Linux. For Mac users, use "-fast-math" or ignore it. If you are working on the Windows system, you need to install the g++ compiler first.
 
 # COPYRIGHT & CONTACT
 Copyright (c) Xiaoqiang Huang. FASPR is free to academic users. For suggestions, please contact xiaoqiah@umich.edu or xiaoqiah@outlook.com.
