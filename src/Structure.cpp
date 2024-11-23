@@ -87,9 +87,10 @@ void Structure::WritePDB(string &pdbfile)
 void Structure::OutputPDB(PV1 &pdb)
 {
   cout<<setiosflags(ios::fixed)<<setprecision(3);
-  int i,j,k,atomindex=1;
+  int i,j,k;
   cout<<"REMARK repacked structure by FASPR"<<endl;
   for(i=0;i<nres;i++){
+    int atomindex=1; // index atom from 1 for each residue
     for(j=0;j<pdb[i].atNames.size();j++){
       cout<<"ATOM  "<<setw(5)<<atomindex<<" ";
       cout<<pdb[i].atNames[j]<<" "<<pdb[i].name<<" "<<pdb[i].chID<<setw(4)<<pdb[i].pos<<pdb[i].ins<<"   ";
@@ -117,9 +118,10 @@ void Structure::OutputPDB(PV1 &pdb,string &pdbfile)
     exit(0);
   }
   ofile<<setiosflags(ios::fixed)<<setprecision(3);
-  int i,j,k,atomindex=1;
+  int i,j,k;
   ofile<<"REMARK repacked structure by FASPR"<<endl;
   for(i=0;i<nres;i++){
+    int atomindex=1; // index atom from 1 for each residue
     for(j=0;j<pdb[i].atNames.size();j++){
       ofile<<"ATOM  "<<setw(5)<<atomindex<<" ";
       ofile<<pdb[i].atNames[j]<<" "<<pdb[i].name<<" "<<pdb[i].chID<<setw(4)<<pdb[i].pos<<pdb[i].ins<<"   ";
